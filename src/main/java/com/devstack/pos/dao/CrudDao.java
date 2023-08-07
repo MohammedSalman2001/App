@@ -7,7 +7,7 @@ public interface CrudDao<T, ID> extends SuperDao {
 
     public void delete(ID id);
 
-    public void update(T t);
+    public void update(T t) throws ClassNotFoundException;
 
     public T find(ID id);
 
