@@ -13,7 +13,6 @@ public class CustomerDaoImpl implements CustomerDao {
     public void Save(Customer customer) {
         Session session= HibernateConfiguration.getHibernateConfiguration().getSession();
         Transaction transaction = session.beginTransaction();
-
         try{
             session.save(customer);
             transaction.commit();
@@ -42,7 +41,7 @@ public class CustomerDaoImpl implements CustomerDao {
         Session session = HibernateConfiguration.getHibernateConfiguration().getSession();
         Transaction transaction = session.beginTransaction();
         try {
-            Customer selectedCustomer = session.find(Customer.class, customer.getId());
+            Customer  selectedCustomer = session.find(Customer.class, customer.getId());
             if(selectedCustomer!=null){
                 selectedCustomer.setName(customer.getName());
                 selectedCustomer.setAddress(customer.getAddress());
