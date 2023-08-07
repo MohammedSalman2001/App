@@ -15,7 +15,14 @@
     <div class="logo-outer">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Wattpad_logo.png/2560px-Wattpad_logo.png" alt="">
     </div>
-  <div class="nav-outer"></div>
+  <div class="nav-outer">
+      <ul>
+          <li><a href="customer.jsp">Customer</a></li>
+          <li><a href="">Item</a></li>
+          <li><a href="">Order</a></li>
+          <li><a href="">Place Order</a></li>
+      </ul>
+  </div>
 </div>
 
 

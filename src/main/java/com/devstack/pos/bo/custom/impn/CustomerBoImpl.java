@@ -6,8 +6,10 @@ import com.devstack.pos.dao.factory.DaoFactory;
 import com.devstack.pos.dao.factory.DaoType;
 import com.devstack.pos.dto.CustomerDto;
 import com.devstack.pos.entity.Customer;
+import com.devstack.pos.entity.Order;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 public class CustomerBoImpl implements CustomerBo {
 
@@ -15,7 +17,7 @@ public class CustomerBoImpl implements CustomerBo {
     @Override
     public void saveCustomer(CustomerDto dto) {
         customerDao.Save(
-                new Customer(dto.getId(),dto.getName(),dto.getAddress(),dto.getSalary())
+                new Customer(dto.getId(),dto.getName(),dto.getAddress(),dto.getSalary(),new ArrayList<Order>())
         );
 
     }
@@ -23,7 +25,7 @@ public class CustomerBoImpl implements CustomerBo {
     @Override
     public void updateCustomer(CustomerDto dto) throws ClassNotFoundException {
         customerDao.update(
-                new Customer(dto.getId(),dto.getName(),dto.getAddress(),dto.getSalary())
+                new Customer(dto.getId(),dto.getName(),dto.getAddress(),dto.getSalary(),new ArrayList<Order>())
         );
     }
 
