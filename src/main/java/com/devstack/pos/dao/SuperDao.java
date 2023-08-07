@@ -1,4 +1,4 @@
 package com.devstack.pos.dao;
 
-public interface SuperDao e{
+public interface SuperDao {
 }

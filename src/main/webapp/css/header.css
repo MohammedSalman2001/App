@@ -1,0 +1,21 @@
+.header-outer{
+    width: 100%;
+    background-color: #34495e;
+    height: 50px;
+    /*box-shadow: 10px 10px 5px #c0392b;*/
+    display: flex;
+}
+.logo-outer{
+    width: 250px;
+    height: 100%;
+    border: 5px solid red;
+}
+.logo-outer>img{
+    height: 50px;
+}
+
+.nav-outer{
+    flex: 1;
+    height: 50px;
+    border: 5px solid red;
+}
